@@ -1,63 +1,69 @@
-# 🎨 Geometry Visualizer - Premium Edition
+# 🎨 Geometry Visualizer – Premium Edition
 
-An interactive web application for exploring mathematical geometry concepts AND graphing mathematical functions in real-time. Features a premium dark theme interface, interactive canvas with zoom/pan, and a built-in graphing calculator.
+An interactive web application for exploring geometric shapes and graphing mathematical functions in real-time. Designed with a modern UI, this tool enhances conceptual understanding through visualization and interactivity.
 
-## ✨ Premium Features
+---
 
-### 📊 **Graphing Calculator**
+## 🚀 Features
 
-- Plot multiple mathematical functions simultaneously
-- Supports: sin, cos, tan, sqrt, abs, log, exp, and more
-- Real-time equation input with live graphing
-- Example: `y = x^2`, `y = sin(x)`, `y = 1/x`
+### 📊 Graphing Calculator
+- Plot multiple mathematical functions simultaneously  
+- Supports: `sin`, `cos`, `tan`, `sqrt`, `log`, `exp`, etc.  
+- Real-time equation input with instant rendering  
+- Examples: `y = x^2`, `y = sin(x)`, `y = 1/x`  
 
-### 🔍 **Interactive Canvas**
+### 🔍 Interactive Canvas
+- Zoom & Pan support (50%–500%)  
+- Real-time coordinate tracking  
+- Intelligent grid with axis labels  
+- One-click reset to default view  
 
-- **Zoom & Pan**: Scroll wheel zooming (50%-500%)
-- **Real-time Coordinates**: Mouse position display in graph space
-- **Intelligent Grid**: Scale-aware grid with labels
-- **Quick Reset**: Return to default view with one click
+### 🎨 Modern UI/UX
+- Dark theme with purple/indigo accents  
+- Glassmorphism effects  
+- Smooth animations and transitions  
+- Clean and responsive layout  
 
-### 🎨 **Modern Premium Design**
+### ✨ Shape Visualization
+- Real-time rendering of geometric shapes  
+- Adjustable parameters via sliders and inputs  
+- Instant visual feedback  
 
-- Dark theme with purple/indigo accents
-- Glass-morphism effects with backdrop blur
-- Smooth animations and transitions
-- Professional gradient text and visual effects
+### 📚 Educational Content
+- Mathematical formulas and equations  
+- Shape properties and characteristics  
+- Interesting mathematical facts  
 
-### ✨ **Real-time Shape Visualization**
+---
 
-- 7 different geometric shapes with instant preview
-- Interactive sliders and number inputs for parameters
+## 📐 Supported Shapes
 
-### 📚 **Educational Content**
+- Circle  
+- Rectangle  
+- Square  
+- Triangle  
+- Ellipse  
+- Regular Polygon (3–12 sides)  
+- Line Segment  
 
-- Geometric formulas and equations
-- Shape properties and characteristics
-- Mathematical facts and theories
-- Historical context and applications
+---
 
-🎯 **Supported Shapes**
+## 🛠 Tech Stack
 
-- Circle
-- Rectangle
-- Square
-- Triangle
-- Ellipse
-- Regular Polygon
-- Line Segment
+- **React 18** – Frontend framework  
+- **Vite** – Build tool  
+- **HTML5 Canvas API** – Rendering engine  
+- **CSS3** – Styling and animations  
 
-## Tech Stack
+---
 
-- **React 18** - UI framework
-- **Vite** - Fast build tool and dev server
-- **HTML5 Canvas** - Shape rendering
-- **CSS3** - Modern styling with animations
+## 📄 Project Report
 
-## Installation
+👉 [Download Project Report](./report/Report.pdf)
 
-1. Navigate to the project directory
-2. Install dependencies:
+---
+
+## ⚙️ Installation
 
 ```bash
 npm install
@@ -79,6 +85,7 @@ Build the project:
 
 ```bash
 npm run build
+npm run preview
 ```
 
 Preview the production build:
@@ -92,20 +99,16 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── Canvas.jsx              # Canvas rendering component
-│   ├── Canvas.css
-│   ├── ShapeSelector.jsx       # Shape selection buttons
-│   ├── ShapeSelector.css
-│   ├── PropertiesPanel.jsx     # Properties and info panel
-│   └── PropertiesPanel.css
+│   ├── Canvas.jsx
+│   ├── ShapeSelector.jsx
+│   ├── PropertiesPanel.jsx
+│   └── ...
 ├── utils/
-│   └── shapeDrawer.js          # Shape drawing utilities
+│   └── shapeDrawer.js
 ├── data/
-│   └── shapeData.js            # Shape metadata and information
-├── App.jsx                     # Main application component
-├── App.css
-├── main.jsx                    # Entry point
-└── index.css                   # Global styles
+│   └── shapeData.js
+├── App.jsx
+├── main.jsx
 ```
 
 ## 🎮 How to Use
@@ -178,8 +181,8 @@ This tool is perfect for:
 MIT License - Feel free to use and modify
 
 ## Author
-
-Created as an educational geometry visualization tool inspired by Desmos and similar mathematical tools.
+Pranav Bhatia
+B.Tech CSE (2nd Year)
 
 ---
 
