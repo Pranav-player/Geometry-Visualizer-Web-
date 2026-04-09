@@ -59,7 +59,7 @@ An interactive web application for exploring geometric shapes and graphing mathe
 
 ## 📄 Project Report
 
-👉 [Download Project Report](./report/Report.pdf)
+👉 [Download Project Report](./Report.pdf)
 
 ---
 
