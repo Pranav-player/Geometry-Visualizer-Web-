@@ -1,0 +1,438 @@
+.properties-panel {
+  background: linear-gradient(180deg, #f8f1e7 0%, #efe2d2 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.properties-panel:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(92, 67, 41, 0.08);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid transparent;
+  background: rgba(255, 250, 243, 0.75);
+  color: var(--ink-mid);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.tab-btn:hover {
+  background: #fff9f0;
+  border-color: #cdb59b;
+  color: var(--ink-deep);
+}
+
+.tab-btn.active {
+  background: var(--primary-color);
+  color: #fcf8f1;
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 16px rgba(15, 77, 58, 0.22);
+}
+
+.controls-panel,
+.info-panel {
+  padding: 20px;
+  flex: 1;
+}
+
+.controls-panel h4,
+.info-panel h4 {
+  color: var(--ink-deep);
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.2px;
+}
+
+.param-unit {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd0be;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(15, 77, 58, 0.24);
+  transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(15, 77, 58, 0.35);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+
+.number-input {
+  padding: 9px 11px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: #fff9f1;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.number-input:hover {
+  border-color: #b79a79;
+  background: #fffdf9;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: #fffdf8;
+  box-shadow: 0 0 0 3px rgba(15, 77, 58, 0.12);
+}
+
+.inline-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.inline-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(15, 77, 58, 0.08);
+  border: 1px solid rgba(15, 77, 58, 0.2);
+}
+
+.inline-result-item span {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.inline-result-item strong {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-family: "Courier New", monospace;
+}
+
+/* Info Panel Styles */
+.info-section {
+  margin-bottom: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.info-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-section h5 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.info-section p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.formulas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formula {
+  background: rgba(15, 77, 58, 0.08);
+  padding: 11px 12px;
+  border-radius: 9px;
+  border-left: 3px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.formula:hover {
+  transform: translateX(2px);
+  background: rgba(15, 77, 58, 0.14);
+}
+
+.formula strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.formula code {
+  background: #fcf6ec;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  display: block;
+  overflow-x: auto;
+  font-weight: 500;
+  border: 1px solid var(--border-light);
+}
+
+.properties-list,
+.facts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.properties-list li,
+.facts-list li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 10px 12px;
+  background: rgba(255, 250, 241, 0.75);
+  border-radius: 8px;
+  border-left: 3px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.properties-list li:hover,
+.facts-list li:hover {
+  border-left-color: var(--primary-color);
+  background: #fffaf3;
+  transform: translateX(2px);
+  color: var(--text-primary);
+}
+
+.properties-list strong,
+.facts-list strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Calculator Panel Styles */
+.calculator-panel {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 520px;
+  flex: 1;
+}
+
+.calculator-panel h4 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.calculations-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.calculation-item {
+  background: linear-gradient(
+    130deg,
+    rgba(15, 77, 58, 0.08) 0%,
+    rgba(182, 133, 80, 0.12) 100%
+  );
+  border: 1px solid rgba(15, 77, 58, 0.2);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.calculation-item:hover {
+  border-color: var(--primary-color);
+  background: linear-gradient(
+    130deg,
+    rgba(15, 77, 58, 0.14) 0%,
+    rgba(182, 133, 80, 0.18) 100%
+  );
+  box-shadow: 0 6px 18px rgba(15, 77, 58, 0.12);
+  transform: translateX(2px);
+}
+
+.calc-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+}
+
+.calc-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-deep);
+  font-family: "Courier New", monospace;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.calc-unit {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Controls Section - Parameters and Calculations */
+.controls-section,
+.calculations-section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.controls-section:last-child,
+.calculations-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.controls-section h4,
+.calculations-section h4 {
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.calculations-section {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.06) 0%,
+    rgba(139, 92, 246, 0.04) 100%
+  );
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.calculations-section:last-child {
+  border-bottom: none;
+}
+
+.calculations-section .calculation-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  margin-bottom: 10px;
+}
+
+.calculations-section .calculation-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .properties-panel {
+    max-height: 420px;
+  }
+
+  .controls-panel,
+  .info-panel,
+  .calculator-panel {
+    max-height: 320px;
+    padding: 16px;
+  }
+
+  .info-section {
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  .control-group {
+    gap: 6px;
+  }
+
+  .controls-list {
+    gap: 12px;
+  }
+}

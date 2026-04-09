@@ -1,0 +1,120 @@
+.canvas-container {
+  background: linear-gradient(170deg, #f8f3eb 0%, #eee2d3 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-height: 0;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.canvas-container:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+}
+
+.canvas {
+  border: 1px solid #d7c7b3;
+  border-radius: 12px;
+  cursor: crosshair;
+  background: #fcfaf7;
+  display: block;
+  box-shadow: inset 0 2px 8px rgba(48, 30, 21, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.canvas:hover {
+  border-color: #bda58c;
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.zoom-btn {
+  background: #f5ece0;
+  border: 1px solid var(--border-color);
+  color: var(--ink-deep);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.zoom-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #f9f8f4;
+  box-shadow: 0 6px 16px rgba(15, 77, 58, 0.24);
+}
+
+.zoom-level {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.canvas-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 10px 12px;
+  background: rgba(140, 105, 70, 0.08);
+  border-radius: 8px;
+  border: 1px solid #d8c8b5;
+}
+
+.canvas-info-left,
+.canvas-info-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.coordinate-display {
+  font-family: "Courier New", monospace;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .canvas-container {
+    padding: 15px;
+  }
+
+  .canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .canvas-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .zoom-controls {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+
+  --primary-color: #0f4d3a;
+  --primary-light: #1e6e55;
+  --primary-dark: #0a3b2d;
+  --secondary-color: #8a6742;
+  --accent-color: #b68550;
+  --accent-light: #d2a973;
+
+  --bg-primary: #f2eee9;
+  --bg-secondary: #f7f3ec;
+  --bg-tertiary: #efe7dc;
+  --bg-quaternary: #e4d7c8;
+
+  --text-primary: #2e2018;
+  --text-secondary: #5a4535;
+  --text-tertiary: #8a7463;
+
+  --ink-deep: #2f1d13;
+  --ink-mid: #4f372b;
+
+  --border-color: #d7c8b5;
+  --border-light: #e6dbcd;
+
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+
+  --shadow-sm: 0 2px 4px rgba(35, 22, 16, 0.08);
+  --shadow-md: 0 8px 22px rgba(35, 22, 16, 0.12);
+  --shadow-lg: 0 18px 42px rgba(35, 22, 16, 0.16);
+  --shadow-xl: 0 24px 60px rgba(35, 22, 16, 0.2);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(180, 144, 97, 0.16),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 88% 75%,
+      rgba(26, 102, 77, 0.09),
+      transparent 44%
+    ),
+    linear-gradient(135deg, #f4efe8 0%, #ede2d3 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(126, 89, 56, 0.12);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 77, 58, 0.75);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(15, 77, 58, 0.92);
+  color: #f8f7f2;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

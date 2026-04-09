@@ -1,0 +1,204 @@
+.equation-input {
+  background: linear-gradient(180deg, #f9f3ea 0%, #f0e5d6 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--shadow-md);
+}
+
+.equation-input h3 {
+  color: var(--ink-deep);
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.8px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.equation-field {
+  flex: 1;
+  background: #fffbf4;
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px 13px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-family: "Courier New", monospace;
+  transition: all 0.3s ease;
+}
+
+.equation-field::placeholder {
+  color: var(--text-tertiary);
+}
+
+.equation-field:hover {
+  border-color: #c9ae90;
+  background: #fffef9;
+}
+
+.equation-field:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(15, 77, 58, 0.12);
+}
+
+.add-btn {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(15, 77, 58, 0.2);
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 77, 58, 0.3);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(15, 77, 58, 0.25);
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  border-left: 3px solid #ef4444;
+}
+
+.equations-list {
+  background: rgba(15, 77, 58, 0.06);
+  border: 1px solid rgba(15, 77, 58, 0.2);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.equations-list h4 {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.equations-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.equation-item {
+  background: rgba(255, 250, 245, 0.85);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.equation-text {
+  color: var(--text-secondary);
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.remove-btn {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.remove-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
+
+.equation-help {
+  background: rgba(182, 133, 80, 0.08);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+}
+
+.equation-help p {
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.equation-help ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.equation-help li {
+  color: var(--text-tertiary);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  padding-left: 8px;
+}
+
+.equation-help li::before {
+  content: "→ ";
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .equation-input {
+    padding: 14px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
